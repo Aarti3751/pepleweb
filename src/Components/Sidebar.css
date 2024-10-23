@@ -1,0 +1,39 @@
+
+
+.sidebar-container {
+    width: 250px;
+  }
+  
+  .sidebar-list {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0;
+  }
+  
+  .sidebar-link {
+    text-decoration: none;
+   
+    color: #1E1E1E; 
+    display: block;
+    padding: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .sidebar-link.active {
+    color: #6941C6; 
+  }
+  
+  .sidebar-link li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-link .sidebar-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: inherit;
+  }
+  

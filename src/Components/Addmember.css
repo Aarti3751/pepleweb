@@ -1,0 +1,357 @@
+.peopledir-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.peopledir-left {
+    display: flex;
+    align-items: center;
+}
+
+.peopledir-left h1 {
+    margin-right: 15px;
+}
+
+.peopledir-actions {
+    display: flex;
+    align-items: center;
+}
+
+.peopledir-search {
+    position: relative;
+    flex: 1;
+}
+
+.search-input {
+    padding-right: 2.5rem; 
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.peopledir-filter {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-right: 15px;
+    font-size: 1.5rem; 
+}
+.peopledir-filter:hover {
+    background-color: #f0f0f0;
+}
+
+.peopledir-add-btn {
+    background-color: #6941C6;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+}
+
+
+.custom-input {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.custom-select {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.people-table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.table td {
+    background-color: #ffffff;
+    color: #6c757d;
+}
+
+.table thead th {
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.table .btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.table .btn-sm {
+    font-size: 0.9rem;
+}
+
+.table .edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.table .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.table .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.table .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.table .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.table .d-flex img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.table .d-flex div {
+    line-height: 1.2;
+}
+
+.table .text-muted {
+    font-size: 0.7rem;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.rounded-pill.fw-bold {
+    font-weight: bold;
+}
+
+.rounded-pill.design {
+    color: #6941C6;
+    background-color: #f8f5fe;
+    border: 2px solid #e6d6fa;
+}
+
+.rounded-pill.product {
+    color: #175cc7;
+    background-color: #eff8ff;
+    border: 2px solid #b1ddff;
+}
+
+.rounded-pill.marketing {
+    color: #3537c9;
+    background-color: #edf3ff;
+    border: 2px solid #c6d7f8;
+}
+
+.rounded-pill.plus {
+    color: black;
+    background-color: #f9fafc;
+    border: 2px solid #e6e7eb;
+}
+
+@media (max-width: 768px) {
+    .peopledir-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .peopledir-actions {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .peopledir-search {
+        width: 100%;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+.selected-teams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.team-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    color: #495057;
+    font-size: 0.9rem;
+    border: 1px solid #d0d5dd;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-tag:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* General Styles for Pagination */
+.custom-pagination {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .custom-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0; /* No gap between pagination items */
+  }
+  
+  /* Style for the pagination number items */
+  .custom-pagination-item-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Center pagination numbers */
+  }
+  
+  .custom-pagination-item {
+    border: 1px solid #d1d1d1;
+    margin: 0; 
+    padding: 5px 10px;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent; /* No background for inactive page numbers */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .custom-pagination-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Active Page Number Styles */
+  .custom-pagination-item.active {
+    background-color: #6941c6; /* Purple background for active page */
+    color: white; /* White text for active page */
+  }
+  
+  /* Styling for Previous/Next Buttons */
+  .custom-pagination-btn {
+    border: 1px solid #d1d1d1;
+    padding: 5px 15px;
+    color: black; /* Black text color for Prev and Next buttons */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .custom-pagination-btn:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .custom-pagination-btn svg {
+    margin-left: 5px; 
+    margin-right: 5px;
+  }
+  
+  /* Position Previous Button on Left */
+  .prev-btn {
+    margin-right: auto;
+    color: gray;
+  }
+  
+  /* Position Next Button on Right */
+  .next-btn {
+    margin-left: auto;
+    color: gray;
+  }
+  
+  /* Disable State Styling */
+  .custom-pagination-btn[disabled] {
+    cursor: not-allowed;
+    color: #ccc;
+    border-color: #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  /* Mobile Responsive Pagination */
+  @media (max-width: 768px) {
+    .custom-pagination {
+      flex-direction: column;
+      align-items: center; /* Align in center on mobile */
+    }
+    .custom-pagination-item-container {
+      justify-content: center;
+    }
+    .custom-pagination-item,
+    .custom-pagination-btn {
+      margin: 5px 0;
+    }
+  }
+  
+  
+  
